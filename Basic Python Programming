@@ -1,0 +1,91 @@
+'''First Python Program'''
+print("code 1\n\nHello World"+ "\n\n")
+
+'''use of Varibales'''
+
+name ="Surendran"
+age="20"
+print("code 2\n\n" + name + " is his name and his age is " +age+ "\n\n")
+
+'''Working with Strings'''
+
+print("code 3\n\n" + "******Surendran\"\*********\n*****Dayanandan**********"+ "\n\n")
+
+character_name="Surendran"
+print("Code 4\n\n")
+print(character_name.upper().isupper())
+print("First character of  "+ character_name+ " is " + character_name[0])
+print("Length of  "+ character_name+ " is " )
+print(len(character_name))
+print("The character a is at the position " + str(character_name.index("a")) +" in " + character_name)
+'''print(character_name.index("a"))'''
+print(" Replaced")
+print(character_name.replace("Suren","Naren"))
+print("\n\n")
+
+'''Working with Numbers'''
+
+maths_mark=float(input("Your Maths score is"))
+Science_mark=float(input("Your Science score is"))
+print("Code 5\n\n")
+print("Your maths score is "+str(maths_mark) + " and your Science score is "+str(Science_mark))
+print("\n\n")
+
+'''
+Nested If statements
+'''
+val=100
+if val<=100:
+    print("value is less than and equal to 100")
+    if val>=0 and val<=50:
+        print ("value is between 0 and 50")
+    elif val>50 and val<=99:
+        print ("value is between 51 and 100")
+    else:
+        print("value is  100")
+
+"""While loop"""
+
+count=0
+while True:
+    print(count)
+    count+=1
+    if (count>=5):
+        break
+
+"""For loop"""
+i=2
+for i in range(9):
+    print(i)
+
+"""For loop"""
+i=2
+for i in range(3,9):
+    print(i)
+
+''' Ternary Operator'''
+
+for x in range(1,9):
+    print(str(x)+" is an even number") if (x%2==0) else (print(str(x)+ " is an odd number"))
+
+''' Errors and Exceptions'''
+
+while True:
+    try:
+        x=input("Please enter the number: ")
+        y=int(x)
+        break
+    except ValueError:
+        print("Please enter the valid number")
+    except (RuntimeError,TypeError,NameError):
+        pass
+    finally:
+        print("Character entered is "+str(x))
+
+'''type casting'''
+
+s='10'
+i=int(s)
+print(type(s))
+print(type(i))
+
